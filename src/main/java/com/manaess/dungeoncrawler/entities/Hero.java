@@ -34,4 +34,16 @@ public class Hero {
     public int getCurrentHealth() {
         return currentHealth;
     }
+
+
+/**
+ * Checks whether the hero is still alive.
+ *
+ * @return true if current health is above zero, false otherwise
+ */
+
+    public boolean isAlive() {
+        return currentHealth > 0;
+         }
+
 }
