@@ -1,5 +1,6 @@
 package com.manaess.dungeoncrawler.entities;
 
+
 /**
  * Represents the hero controlled by the player.
  * A hero has a name and combat statistics
@@ -46,4 +47,18 @@ public class Hero {
         return currentHealth > 0;
          }
 
-}
+
+/**
+ * Applies damage to the hero, reduced by their defense.
+ * The actual damage dealt is never negative, and current health
+ * never drops below zero.
+ *
+ * @param amount the raw amount of damage inflicted
+ */
+
+public void takeDamage(int amount){
+            int actualDamage = Math.max(amount-defense,0);
+            currentHealth = Math.max(currentHealth - actualDamage,0);
+     }
+
+   }
