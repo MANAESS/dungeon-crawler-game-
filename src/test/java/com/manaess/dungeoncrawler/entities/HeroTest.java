@@ -20,4 +20,13 @@ class HeroTest {
         assertTrue(hero.isAlive());
         }
 
-      }
+      
+ 
+    @Test
+    void takeDamageShouldReduceHealthByAmountMinusDefense() {
+        Hero hero = new Hero("Daemon Targaryen", 100, 15, 5);
+        hero.takeDamage(20);
+        assertEquals(85,hero.getCurrentHealth());
+  }
+
+   }
