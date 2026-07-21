@@ -73,4 +73,42 @@ public void heal( int amount) {
             currentHealth = Math.min(currentHealth + amount,maxHealth);
      }
 
+
+
+     /**
+ * Returns the hero's name.
+ *
+ * @return the hero's name
+ */
+public String getName() {
+    return name;
+}
+
+/**
+ * Returns the hero's maximum health.
+ *
+ * @return the maximum health points
+ */
+public int getMaxHealth() {
+    return maxHealth;
+}
+
+/**
+ * Returns the hero's attack power.
+ *
+ * @return the attack power
+ */
+public int getAttackPower() {
+    return attackPower;
+}
+
+/**
+ * Returns the hero's defense.
+ *
+ * @return the defense value
+ */
+public int getDefense() {
+    return defense;
+}
+
    }
