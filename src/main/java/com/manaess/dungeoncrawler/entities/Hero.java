@@ -61,4 +61,16 @@ public void takeDamage(int amount){
             currentHealth = Math.max(currentHealth - actualDamage,0);
      }
 
+
+/**
+ * Heals the hero, increasing current health.
+ * Current health never exceeds the hero's maximum health.
+ *
+ * @param amount the amount of health to restore
+ */ 
+
+public void heal( int amount) {
+            currentHealth = Math.min(currentHealth + amount,maxHealth);
+     }
+
    }

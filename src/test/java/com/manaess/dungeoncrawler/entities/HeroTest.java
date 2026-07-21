@@ -29,4 +29,13 @@ class HeroTest {
         assertEquals(85,hero.getCurrentHealth());
   }
 
+    @Test 
+    void healShouldIncreaseHealthWithoutExceedingMax () {
+        Hero hero = new Hero("Daemon Targaryen", 100,15,5);
+        hero.takeDamage(40);
+        hero.heal(20);
+        assertEquals(85,hero.getCurrentHealth());
+
+
    }
+     }
